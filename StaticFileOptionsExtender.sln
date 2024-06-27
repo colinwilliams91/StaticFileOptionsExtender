@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticFileOptionsExtender", "StaticFileOptionsExtender.csproj", "{2EE4DB00-BA06-47AB-8AED-8729015B5419}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EE4DB00-BA06-47AB-8AED-8729015B5419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE4DB00-BA06-47AB-8AED-8729015B5419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE4DB00-BA06-47AB-8AED-8729015B5419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE4DB00-BA06-47AB-8AED-8729015B5419}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE9C26FC-5746-4B97-906B-CFA2E4ACFCD9}
+	EndGlobalSection
+EndGlobal
