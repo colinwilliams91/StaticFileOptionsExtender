@@ -21,6 +21,7 @@
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
 	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+	<FileVersion>1.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
