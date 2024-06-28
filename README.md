@@ -6,7 +6,19 @@
 2. Allow user to extend the Options Class to add additional compression types and configure mappings.
 
 ## To Use:
+```C#
+using CWDev.StaticFileOptionsExtender;
 
+var builder = WebApplication.CreateBuilder(args);
+
+// ...
+
+var app = builder.Build();
+
+// ...
+
+app.UseStaticFiles(StaticFileOptionsExtender.GetOptions()); // <--
+```
 
 ## Abstract:
 .NET `WebApplicationBuilder` can be leveraged to configure the application HTTP Request Pipeline. \
