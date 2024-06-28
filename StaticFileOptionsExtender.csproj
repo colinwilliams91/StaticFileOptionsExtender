@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<PackageId>CWDev.StaticFileOptionsExtender</PackageId>
-	<Version>1.0.0</Version>
+	<Version>1.0.1</Version>
 	<Author>colin.williams.dev</Author>
 	<Product>StaticFileOptionsExtender</Product>
 	<Description>A .NET library that extends the content-type/MIME-type mappings for serving static files which have been compressed.</Description>
