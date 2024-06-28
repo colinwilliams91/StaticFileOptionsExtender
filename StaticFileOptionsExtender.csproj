@@ -17,6 +17,10 @@
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageTags>compression;encoding-decoding;csharp;brotli;gzip;webgl;unity;dotnet;static-file-handler;mime-types;content-types;http-server;mappings;server;</PackageTags>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<IncludeSymbols>False</IncludeSymbols>
+	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
+	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
   </PropertyGroup>
 
   <ItemGroup>
