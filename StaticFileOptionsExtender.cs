@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.StaticFiles;
 
-namespace StaticFileOptionsExtender
+namespace CWDev
 {
     /// <summary>
     /// Handles WebGL specific <see langword="MIME"/> and <see langword="ContentEncoding"/>
