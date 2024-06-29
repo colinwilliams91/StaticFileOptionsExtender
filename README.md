@@ -6,8 +6,11 @@
 2. Allow user to extend the Options Class to add additional compression types and configure mappings.
 
 ## To Use:
+- Leverage the package's `static using` directive
+- Call the package's `GetOptions` method 
+- This will pass the extended `StaticFileOptions` as the argument to the `UseStaticFiles` call while building the request pipeline.
 ```C#
-using CWDev.StaticFileOptionsExtender;
+using static CWDev.StaticFileOptionsExtender;      // <-- *
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +20,7 @@ var app = builder.Build();
 
 // ...
 
-app.UseStaticFiles(StaticFileOptionsExtender.GetOptions()); // <--
+app.UseStaticFiles(GetOptions());                  // <-- *
 ```
 
 ## Abstract:
@@ -57,6 +60,12 @@ by building from Unity.
 
 ## Overview:
 
-
+## Release-Notes:
+- [CHANGELOG](https://github.com/colinwilliams91/StaticFileOptionsExtender/blob/main/CHANGELOG.md)
+  - The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+  - Commits follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) patterns
 
 ## Contribute:
+- Please open a [GitHub Issue](https://github.com/colinwilliams91/StaticFileOptionsExtender/issues).
+- Open a [PR](https://github.com/colinwilliams91/StaticFileOptionsExtender/pulls) if you have a proposed fix.
+- I will respond in <=24 hours with thoughts and/or solution.
