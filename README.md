@@ -6,9 +6,9 @@
 2. Allow user to extend the Options Class to add additional compression types and configure mappings.
 
 ## To Use:
-- Leverage the package's `static using` directive
-- Call the package's `GetOptions` method 
-- This will pass the extended `StaticFileOptions` as the argument to the `UseStaticFiles` call while building the request pipeline.
+1. Leverage the package's `static using` directive*
+2. Call the package's `GetOptions` method as the argument to `UseStaticFiles(...)`* \
+    This will pass the extended `StaticFileOptions` while building the request pipeline.
 ```C#
 using static CWDev.StaticFileOptionsExtender;      // <-- *
 
@@ -26,6 +26,7 @@ app.UseStaticFiles(GetOptions());                  // <-- *
 ## Abstract:
 .NET `WebApplicationBuilder` can be leveraged to configure the application HTTP Request Pipeline. \
 Within that Pipeline `StaticFileMiddleware` can be used to serve static files. \
+\
 Typically, the `app.UseStaticFiles(StaticFileOptions options)` middleware configures a few key \
 steps. This library is mostly concerned with TWO -- Providers and Handlers -- regarding:
 - Mapping files `content-types`:
@@ -43,7 +44,6 @@ public static StaticFileOptions GetOptions()
         ContentTypeProvider = customFileTypeProvider,                // <-- *
         OnPrepareResponse = (StaticFileResponseContext context) =>   // <-- *
         {
-            // In addition to the MIME type also set the according encoding header (e.g. "br")
             if (CompressionEncodings.TryGetValue(Path.GetExtension(context.File.Name), out string? encoding))
             {
                 context.Context.Response.Headers.ContentEncoding = encoding;
@@ -66,6 +66,6 @@ by building from Unity.
   - Commits follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) patterns
 
 ## Contribute:
-- Please open a [GitHub Issue](https://github.com/colinwilliams91/StaticFileOptionsExtender/issues).
-- Open a [PR](https://github.com/colinwilliams91/StaticFileOptionsExtender/pulls) if you have a proposed fix.
-- I will respond in <=24 hours with thoughts and/or solution.
+- Please open a [GitHub Issue](https://github.com/colinwilliams91/StaticFileOptionsExtender/issues) with concerns.
+- Open a [PR](https://github.com/colinwilliams91/StaticFileOptionsExtender/pulls) if you have a code proposal.
+- I will respond in `<=24` hours with thoughts and/or solution.
