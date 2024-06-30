@@ -2,7 +2,13 @@
 Also available at https://github.com/colinwilliams91/StaticFileOptionsExtender/blob/main/CHANGELOG.md
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 ## Unreleased
-- n/a
+### Added
+- Cross-platform compatibility for .NET (Windows, macOS, Linux)
+- CHANGELOG_PLAIN.txt to format release notes readability for nuget.org
+## Version 2.0.2 - 06-29-25:
+### Changed
+- README readability
+- DOCUMENTATION files to `\Docs` directory
 ## Version 2.0.1 - 06-28-25:
 ### Added
 - README documentation on...

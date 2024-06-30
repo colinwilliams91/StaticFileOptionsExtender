@@ -14,16 +14,16 @@
 	<Authors>$(Author)</Authors>
 	<PackageProjectUrl>https://github.com/colinwilliams91/StaticFileOptionsExtender</PackageProjectUrl>
 	<PackageIcon>CW_Favicon_124x124.png</PackageIcon>
-	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageReadmeFile>Docs/README.md</PackageReadmeFile>
 	<PackageTags>compression;encoding-decoding;csharp;brotli;gzip;webgl;unity;dotnet;static-file-handler;mime-types;content-types;http-server;mappings;server;</PackageTags>
-	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageLicenseFile>Docs/LICENSE.txt</PackageLicenseFile>
 	<IncludeSymbols>False</IncludeSymbols>
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
 	<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 	<FileVersion>2.0.2</FileVersion>
 	<PackageReleaseNotes>
-	  $([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/CHANGELOG.md"))
+	  $([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/Docs/CHANGELOG.md"))
 	</PackageReleaseNotes>
   </PropertyGroup>
 
@@ -36,15 +36,15 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="LICENSE.txt">
+    <None Update="Docs\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="README.md">
+    <None Update="Docs\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-	<None Update="CHANGELOG.md">
+	<None Update="Docs\CHANGELOG.md">
 	  <Pack>True</Pack>
 	  <PackagePath>\</PackagePath>
 	</None>
