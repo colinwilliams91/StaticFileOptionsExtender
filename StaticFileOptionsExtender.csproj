@@ -23,7 +23,7 @@
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<FileVersion>2.0.2</FileVersion>
 		<PackageReleaseNotes>
-			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/Docs/CHANGELOG_PLAIN.txt"))
+			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt"))
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -61,8 +61,8 @@
 		<Exec Command="powershell -ExecutionPolicy Bypass -File $(MSBuildProjectDirectory)\Scripts\PreprocessChangelog.ps1"/>
 	</Target>
 
-	<Target Name="CleanupProcessedChangelog" AfterTargets="Pack">
-		<Delete Files="$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt"/>
-	</Target>
+	<!--<Target Name="CleanupProcessedChangelog" AfterTargets="Pack">
+		<Delete Files="$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt" Condition="Exists('$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt')"/>
+	</Target>-->
 
 </Project>
