@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackageId>CWDev.StaticFileOptionsExtender</PackageId>
-		<Version>2.0.2</Version>
+		<Version>2.0.3</Version>
 		<Author>colin.williams.dev</Author>
 		<Product>StaticFileOptionsExtender</Product>
 		<Description>A .NET library that extends the content-type/MIME-type mappings for serving static files which have been compressed.</Description>
@@ -14,14 +14,14 @@
 		<Authors>$(Author)</Authors>
 		<PackageProjectUrl>https://github.com/colinwilliams91/StaticFileOptionsExtender</PackageProjectUrl>
 		<PackageIcon>CW_Favicon_124x124.png</PackageIcon>
-		<PackageReadmeFile>Docs/README.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>compression;encoding-decoding;csharp;brotli;gzip;webgl;unity;dotnet;static-file-handler;mime-types;content-types;http-server;mappings;server;</PackageTags>
-		<PackageLicenseFile>Docs/LICENSE.txt</PackageLicenseFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<IncludeSymbols>False</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-		<FileVersion>2.0.2</FileVersion>
+		<FileVersion>2.0.3</FileVersion>
 		<PackageReleaseNotes>
 			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt"))
 		</PackageReleaseNotes>
