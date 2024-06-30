@@ -8,7 +8,7 @@
 ## To Use:
 1. Leverage the package's `static using` directive*
 2. Call the package's `GetOptions` method as the argument to `UseStaticFiles(...)`* \
-    This will pass the extended `StaticFileOptions` while building the request pipeline.
+    this will pass the extended `StaticFileOptions` while building the request pipeline.
 ```C#
 using static CWDev.StaticFileOptionsExtender;      // <-- *
 
