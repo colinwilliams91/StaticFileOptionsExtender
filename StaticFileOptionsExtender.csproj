@@ -13,10 +13,10 @@
 		<Title>Static File Options Extender</Title>
 		<Authors>$(Author)</Authors>
 		<PackageProjectUrl>https://github.com/colinwilliams91/StaticFileOptionsExtender</PackageProjectUrl>
-		<PackageIcon>CW_Favicon_124x124.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>Assets\CW_Favicon_124x124.png</PackageIcon>
+		<PackageReadmeFile>Docs\README.md</PackageReadmeFile>
 		<PackageTags>compression;encoding-decoding;csharp;brotli;gzip;webgl;unity;dotnet;static-file-handler;mime-types;content-types;http-server;mappings;server;</PackageTags>
-		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageLicenseFile>Docs\LICENSE.txt</PackageLicenseFile>
 		<IncludeSymbols>False</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
@@ -32,21 +32,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Update="CW_Favicon_124x124.png">
+		<None Update="Assets\CW_Favicon_124x124.png">
 			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
+			<PackagePath></PackagePath>
 		</None>
 		<None Update="Docs\LICENSE.txt">
 			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
+			<PackagePath></PackagePath>
 		</None>
 		<None Update="Docs\README.md">
 			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
+			<PackagePath></PackagePath>
 		</None>
 		<None Update="Docs\CHANGELOG.md">
 			<Pack>True</Pack>
-			<PackagePath>\</PackagePath>
+			<PackagePath></PackagePath>
 		</None>
 		<None Update="Docs\CHANGELOG_PLAIN.txt">
 			<Pack>False</Pack>
@@ -58,7 +58,7 @@
 	</ItemGroup>
 
 	<Target Name="PreprocessChangelog" BeforeTargets="Pack">
-		<Exec Command="powershell -ExecutionPolicy Bypass -File $(MSBuildProjectDirectory)\Scripts\PreprocessChangelog.ps1"/>
+		<Exec Command="powershell -ExecutionPolicy Bypass -File $(MSBuildProjectDirectory)\Scripts\PreprocessChangelog.ps1" />
 	</Target>
 
 	<!--<Target Name="CleanupProcessedChangelog" AfterTargets="Pack">

@@ -4,6 +4,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ## Unreleased
 ### Added
 - Cross-platform compatibility for .NET (Windows, macOS, Linux)
+## Version 2.0.3 - 06-29-25:
+### Changed
+- Move CWDev icon to `Assets\`
+- Try to remove `Docs/` literal from documentation filenames
 ## Version 2.0.2 - 06-29-25:
 ### Added
 - CHANGELOG_PLAIN.txt to format release notes readability for nuget.org
