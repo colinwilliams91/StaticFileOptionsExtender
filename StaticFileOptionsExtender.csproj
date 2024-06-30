@@ -23,7 +23,7 @@
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
 		<FileVersion>2.0.2</FileVersion>
 		<PackageReleaseNotes>
-			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/Docs/CHANGELOG.md"))
+			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)/Docs/CHANGELOG_PLAIN.txt"))
 		</PackageReleaseNotes>
 	</PropertyGroup>
 
@@ -47,6 +47,9 @@
 		<None Update="Docs\CHANGELOG.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
+		</None>
+		<None Update="Docs\CHANGELOG_PLAIN.txt">
+			<Pack>False</Pack>
 		</None>
 	</ItemGroup>
 
