@@ -4,6 +4,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ## Unreleased
 ### Added
 - Cross-platform compatibility for .NET (Windows, macOS, Linux)
+## Version 2.0.4 - 07-05-25:
+### Fixed
+- `PreprocessChangelog.ps1` string replace methods order so formatting finds correct chars and replaces
 ## Version 2.0.3 - 06-29-25:
 ### Changed
 - Move CWDev icon to `Assets\`
