@@ -4,6 +4,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 ## Unreleased
 ### Added
 - Cross-platform compatibility for .NET (Windows, macOS, Linux)
+## [Version 2.0.5](;;;) - 07-05-25:
+### Changed
+- `PreprocessChangelog.ps1` formats `CHANGELOG` with links to remoge release-tag branches
+  - testing on pack for MSBuild exec w/ XML element arg
 ## [Version 2.0.4](;;;) - 07-05-25:
 ### Fixed
 - `PreprocessChangelog.ps1` string replace methods order so formatting finds correct chars and replaces
