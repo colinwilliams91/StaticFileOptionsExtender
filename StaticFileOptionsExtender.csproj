@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<PackageId>CWDev.StaticFileOptionsExtender</PackageId>
-		<Version>2.0.4</Version>
+		<Version>2.0.5</Version>
 		<Author>colin.williams.dev</Author>
 		<Product>StaticFileOptionsExtender</Product>
 		<Description>A .NET library that extends the content-type/MIME-type mappings for serving static files which have been compressed.</Description>
@@ -21,7 +21,7 @@
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<RunAnalyzersDuringBuild>True</RunAnalyzersDuringBuild>
 		<RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-		<FileVersion>2.0.4</FileVersion>
+		<FileVersion>2.0.5</FileVersion>
 		<PackageReleaseNotes>
 			$([System.IO.File]::ReadAllText("$(MSBuildProjectDirectory)\Docs\CHANGELOG_PLAIN.txt"))
 		</PackageReleaseNotes>
@@ -58,7 +58,7 @@
 	</ItemGroup>
 
 	<Target Name="PreprocessChangelog" BeforeTargets="Pack">
-		<Exec Command="powershell -ExecutionPolicy Bypass -File $(MSBuildProjectDirectory)\Scripts\PreprocessChangelog.ps1" />
+		<Exec Command="powershell -ExecutionPolicy Bypass -File $(MSBuildProjectDirectory)\Scripts\PreprocessChangelog.ps1 -Version v$(Version)" />
 	</Target>
 
 	<!--<Target Name="CleanupProcessedChangelog" AfterTargets="Pack">
