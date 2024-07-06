@@ -10,7 +10,7 @@ if (Test-Path $changelogPath) {
     $contentForLinks = $content
 
     # Updating Docs\CHANGELOG.md with links to remote tags
-    $contentForLinks = $contentForLinks -replace ';;;', "./tree/$Version"
+    $contentForLinks = $contentForLinks -replace ';;;', "../../../tree/$Version"
 
     # Write the processed content to a new file
     Set-Content -Path $changelogPath -Value $contentForLinks -Force
