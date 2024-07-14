@@ -54,7 +54,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Folder Include=".github\ISSUE_TEMPLATE\" />
 		<Folder Include="Scripts\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include=".github\issue_template\issue.yaml" />
 	</ItemGroup>
 
 	<Target Name="PreprocessChangelog" BeforeTargets="Pack">
