@@ -1,0 +1,34 @@
+name: "\U0001F4A1 New Issue"
+description: Suggest a new feature or bug fix
+
+title: 'your-issue'
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        _Thank you for taking the time to propose a new idea_
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: '<h2>Describe the Problem</h2>'
+      description: Please provide a short user story **DESCRIPTION** of the **PROBLEM** or **FEATURE**
+      placeholder: As a user I...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: '<h2>Describe the Proposed Solution</h2>'
+      description: Try to provide an EXAMPLE or CONCEPT of a design pattern that will lead to a SOLUTION
+      placeholder: Implementing x, y, & z will...
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: '<h2>References</h2>'
+      description: Please provide any **SCREENSHOTS**, **CODE SNIPPETS** or **LINKS** to the codebase or documentation which will help implement a solution.
